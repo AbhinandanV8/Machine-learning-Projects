@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="Contract_Month-to-month <= 0.5\ngini = 0.39\nsamples = 5625\nvalue = [4130, 1495]\nclass = No"] ;
+1 [label="MonthlyCharges <= 0.954\ngini = 0.126\nsamples = 2522\nvalue = [2352, 170]\nclass = No"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Contract_One year <= 0.5\ngini = 0.078\nsamples = 1901\nvalue = [1824, 77]\nclass = No"] ;
+1 -> 2 ;
+3 [label="gini = 0.029\nsamples = 1030\nvalue = [1015, 15]\nclass = No"] ;
+2 -> 3 ;
+4 [label="gini = 0.132\nsamples = 871\nvalue = [809, 62]\nclass = No"] ;
+2 -> 4 ;
+5 [label="Contract_One year <= 0.5\ngini = 0.255\nsamples = 621\nvalue = [528, 93]\nclass = No"] ;
+1 -> 5 ;
+6 [label="gini = 0.136\nsamples = 314\nvalue = [291, 23]\nclass = No"] ;
+5 -> 6 ;
+7 [label="gini = 0.352\nsamples = 307\nvalue = [237, 70]\nclass = No"] ;
+5 -> 7 ;
+8 [label="InternetService_Fiber optic <= 0.5\ngini = 0.489\nsamples = 3103\nvalue = [1778, 1325]\nclass = No"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="tenure <= -1.184\ngini = 0.411\nsamples = 1393\nvalue = [991, 402]\nclass = No"] ;
+8 -> 9 ;
+10 [label="gini = 0.496\nsamples = 473\nvalue = [257, 216]\nclass = No"] ;
+9 -> 10 ;
+11 [label="gini = 0.323\nsamples = 920\nvalue = [734, 186]\nclass = No"] ;
+9 -> 11 ;
+12 [label="tenure <= -0.696\ngini = 0.497\nsamples = 1710\nvalue = [787, 923]\nclass = Yes"] ;
+8 -> 12 ;
+13 [label="gini = 0.421\nsamples = 814\nvalue = [245, 569]\nclass = Yes"] ;
+12 -> 13 ;
+14 [label="gini = 0.478\nsamples = 896\nvalue = [542, 354]\nclass = No"] ;
+12 -> 14 ;
+}

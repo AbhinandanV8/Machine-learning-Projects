@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="PaymentMethod_Mailed check <= 0.5\ngini = 0.386\nsamples = 4441\nvalue = [5195, 1837]\nclass = No", fillcolor="#eeae7f"] ;
+1 [label="TotalCharges <= 456.2\ngini = 0.406\nsamples = 3430\nvalue = [3907, 1542]\nclass = No", fillcolor="#efb387"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="InternetService_No <= 0.5\ngini = 0.5\nsamples = 714\nvalue = [562, 594]\nclass = Yes", fillcolor="#f4fafe"] ;
+1 -> 2 ;
+3 [label="gini = 0.466\nsamples = 560\nvalue = [331, 564]\nclass = Yes", fillcolor="#add7f4"] ;
+2 -> 3 ;
+4 [label="gini = 0.203\nsamples = 154\nvalue = [231, 30]\nclass = No", fillcolor="#e89153"] ;
+2 -> 4 ;
+5 [label="Contract_Month-to-month <= 0.5\ngini = 0.344\nsamples = 2716\nvalue = [3345, 948]\nclass = No", fillcolor="#eca571"] ;
+1 -> 5 ;
+6 [label="gini = 0.146\nsamples = 1505\nvalue = [2185, 188]\nclass = No", fillcolor="#e78c4a"] ;
+5 -> 6 ;
+7 [label="gini = 0.478\nsamples = 1211\nvalue = [1160, 760]\nclass = No", fillcolor="#f6d4bb"] ;
+5 -> 7 ;
+8 [label="Contract_Month-to-month <= 0.5\ngini = 0.303\nsamples = 1011\nvalue = [1288, 295]\nclass = No", fillcolor="#eb9e66"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="MonthlyCharges <= 62.225\ngini = 0.081\nsamples = 457\nvalue = [678, 30]\nclass = No", fillcolor="#e68742"] ;
+8 -> 9 ;
+10 [label="gini = 0.026\nsamples = 338\nvalue = [515, 7]\nclass = No", fillcolor="#e5833c"] ;
+9 -> 10 ;
+11 [label="gini = 0.217\nsamples = 119\nvalue = [163, 23]\nclass = No", fillcolor="#e99355"] ;
+9 -> 11 ;
+12 [label="PaperlessBilling <= 0.5\ngini = 0.422\nsamples = 554\nvalue = [610, 265]\nclass = No", fillcolor="#f0b88f"] ;
+8 -> 12 ;
+13 [label="gini = 0.398\nsamples = 295\nvalue = [344, 130]\nclass = No", fillcolor="#efb184"] ;
+12 -> 13 ;
+14 [label="gini = 0.447\nsamples = 259\nvalue = [266, 135]\nclass = No", fillcolor="#f2c19d"] ;
+12 -> 14 ;
+}
