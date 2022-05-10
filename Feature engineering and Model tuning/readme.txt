@@ -1,5 +1,6 @@
-#Feature Engineering & Model Tuning
-Course Featurization, Model Selection & Tuning
+# Feature Engineering & Model Tuning
+
+**Course Featurization, Model Selection & Tuning**
 
 The project was accomplished by employing supervised learning, 
 ensemble modelling and unsupervised learning techniques to build and train a prediction model to identify Pass/Fail yield of a 
